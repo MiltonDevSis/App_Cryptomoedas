@@ -1,4 +1,4 @@
-package com.example.cryptomoedas_app.ui.theme
+package com.example.cryptomoedas_app.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
