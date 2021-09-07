@@ -1,4 +1,4 @@
-package com.example.cryptomoedas_app.presentation.ui
+package com.example.cryptomoedas_app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
