@@ -1,4 +1,4 @@
-package com.example.cryptomoedas_app.presentation.ui.theme
+package com.example.cryptomoedas_app.presentation.theme
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors

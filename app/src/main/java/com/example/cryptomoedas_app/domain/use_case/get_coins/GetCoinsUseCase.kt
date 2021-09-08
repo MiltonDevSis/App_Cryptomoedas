@@ -16,13 +16,13 @@ class GetCoinsUseCase @Inject constructor(
 
     operator fun invoke(): Flow<Resource<List<Coin>>> = flow {
         try {
-            emit(Resource.Loading())
+            emit(Resource.Loading<List<Coin>>())
             val coins = repository.getCoins().map { it.toCoin() }
-            emit(Resource.Sucess(coins))
+            emit(Resource.Sucess<List<Coin>>(coins))
         }catch (e: HttpException){
-            emit(Resource.Error(e.localizedMessage ?: "Um erro inexperado aconteceu!"))
+            emit(Resource.Error<List<Coin>>(e.localizedMessage ?: "Um erro inexperado aconteceu!"))
         }catch (e: IOException){
-            emit(Resource.Error("Não foi possível achar o servidor, check sua internet"))
+            emit(Resource.Error<List<Coin>>("Não foi possível achar o servidor, check sua internet"))
         }
     }
 }

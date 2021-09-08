@@ -1,4 +1,4 @@
-package com.example.cryptomoedas_app
+package com.example.cryptomoedas_app.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,7 +8,7 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.cryptomoedas_app.presentation.ui.theme.Cryptomoedas_AppTheme
+import com.example.cryptomoedas_app.presentation.theme.Cryptomoedas_AppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
