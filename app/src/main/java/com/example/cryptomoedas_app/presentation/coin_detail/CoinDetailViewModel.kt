@@ -10,10 +10,12 @@ import com.example.cryptomoedas_app.common.Resource
 import com.example.cryptomoedas_app.domain.use_case.get_coin.GetCoinUseCase
 import com.example.cryptomoedas_app.domain.use_case.get_coins.GetCoinsUseCase
 import com.example.cryptomoedas_app.presentation.coin_list.CoinListState
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
+@HiltViewModel
 class CoinDetailViewModel @Inject constructor(
     private val getCoinUseCase: GetCoinUseCase,
     stateStateHandle: SavedStateHandle
